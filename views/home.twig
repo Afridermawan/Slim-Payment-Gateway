@@ -1,0 +1,8 @@
+<form action="{{path_for('buy')}}" method="POST">
+    <select name="buy" id="buy">
+	{% for data in data %}
+    	<option value="{{data.id}}">{{data.name}} | {{data.price}}</option>
+	{% endfor %}
+    </select>
+	<button>Buy</button>
+</form>
